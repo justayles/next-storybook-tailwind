@@ -1,13 +1,15 @@
 import CatCard from '../components/cards/cat/CatCard';
 import { mockCatCardProps } from '../components/cards/cat/CatCard.mocks';
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
-import styles from '../styles/Home.module.css';
+//import SidebarLayout from '../components/layouts/sidebar/SidebarLayout';
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <section className={styles.main}>
-      <h1 className={styles.title}>Hello</h1>
+    <section className="bg-gradient-to-r from-cyan-500 to-blue-500">
+      <h1>
+        Welcome to <a href="https://nextjs.org">Next.js!</a>
+      </h1>
       <CatCard {...mockCatCardProps.base} />
     </section>
   );
@@ -16,5 +18,10 @@ const Home: NextPageWithLayout = () => {
 export default Home;
 
 Home.getLayout = (page) => {
-  return <PrimaryLayout>{page}</PrimaryLayout>;
+  return (
+    <PrimaryLayout>
+      {/* <SidebarLayout /> */}
+      {page}
+    </PrimaryLayout>
+  );
 };

@@ -1,11 +1,10 @@
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
-import styles from '../styles/Home.module.css';
 import { NextPageWithLayout } from './page';
 
 const About: NextPageWithLayout = () => {
   return (
-    <section className={styles.main}>
-      <h1 className={styles.title}>About</h1>
+    <section>
+      <h1>About</h1>
       <p>
         Lorem ipsum dipsunm etc Lorem ipsum dipsunm etc Lorem ipsum dipsunm etc
         Lorem ipsum dipsunm etc

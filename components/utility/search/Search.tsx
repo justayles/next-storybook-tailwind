@@ -21,7 +21,7 @@ const Search: React.FC<ISearch> = () => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <div className="space-x-3">
+      <div className="space-x-6">
         <button type="submit" className="btn-primary">
           Google Search
         </button>
