@@ -1,3 +1,23 @@
+# ==============================================================================================
+
+nvm use 16.13.2
+
+https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7
+
+IGNORE THE FOLLOWING
+
+Before we run it we need to make sure we are using webpack5. Add the following to your package.json file:
+
+package.json
+{
+...
+"resolutions": {
+"webpack": "^5"
+}
+}
+
+# ==============================================================================================
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
