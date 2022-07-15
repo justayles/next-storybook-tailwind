@@ -25,6 +25,9 @@ const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
           <a className="hover:underline hidden sm:inline">Images</a>
         </Link>
         {/* <AuthButton /> */}
+        <button className="border-1 p-2 px-4 sm:px-6 bg-blue-500 rounded text-white">
+          Sign In
+        </button>
       </div>
     </header>
   );

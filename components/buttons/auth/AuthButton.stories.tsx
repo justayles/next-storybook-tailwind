@@ -1,22 +1,22 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import CatCard, { ICatCard } from './CatCard';
-import { mockCatCardProps } from './CatCard.mocks';
+import AuthButton, { IAuthButton } from './AuthButton';
+import { mockAuthButtonProps } from './AuthButton.mocks';
 
 export default {
-  title: 'cards/CatCard',
-  component: CatCard,
+  title: 'buttons/AuthButton',
+  component: AuthButton,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-} as ComponentMeta<typeof CatCard>;
+} as ComponentMeta<typeof AuthButton>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof CatCard> = (args) => (
-  <CatCard {...args} />
+const Template: ComponentStory<typeof AuthButton> = (args) => (
+  <AuthButton {...args} />
 );
 
 export const Base = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 
 Base.args = {
-  ...mockCatCardProps.base,
-} as ICatCard;
+  ...mockAuthButtonProps.base,
+} as IAuthButton;
